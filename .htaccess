@@ -1,0 +1,8 @@
+Options -Indexes
+DirectoryIndex index.html
+RewriteBase /
+RewriteEngine on 
+AddType application/x-xpinstall .xpi
+# -----------------------------------------------------------
+RewriteRule ^(/)?$ index.html
+RewriteRule ^console(/)? console.php
